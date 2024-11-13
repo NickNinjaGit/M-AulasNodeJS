@@ -1,0 +1,129 @@
+* {
+  font-family: Monospace;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(229, 182, 190);
+  color: #383737;
+}
+
+/* NAVBAR */
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+.logo a {
+  cursor: pointer;
+  text-decoration: none;
+}
+.logo img {
+    margin-left: 0.5em;
+    width: 24px;
+    
+}
+
+
+#navbar {
+  padding: 1.2em 1.8em;
+  margin-bottom: 0.5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #967878;
+}
+
+#navbar ul {
+  display: flex;
+  list-style: none;
+}
+
+#navbar ul li {
+  font-size: 1.3em;
+  margin-left: 2em;
+  padding-left: 0 0.5em;
+}
+
+#navbar ul li a {
+  text-decoration: none;
+  transition: 0.5s;
+  font-weight: bold;
+}
+
+#navbar ul li a:hover {
+    color: rgb(240, 227, 204)
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.container {
+  padding: 2em;
+}
+.container h1 {
+  margin-bottom: 0.5em;
+}
+.container form {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1em;
+}
+
+.form-control input,
+.form-control textarea {
+  padding: 10px;
+  border: 1px solid #856a6a;
+  border-radius: 3px;
+  margin-bottom: 1em;
+  height: auto;
+}
+
+.form-control textarea {
+    width: 280px;
+    height: 200px;
+    resize: none;
+}
+
+.form-control label {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.3em;
+  margin-bottom: 0.5em;
+  padding-bottom: 0.3em;
+  border-bottom: 2px solid #967878;
+}
+
+form input[type="submit"] {
+  margin-top: 1em;
+  border: 1px solid #a17979;
+  border-radius: 3px;
+  background-color: #b38686;
+  color: #fff;
+  padding: 0.7em 1.5em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+form input[type="submit"]:hover {
+    background-color: rgb(240, 227, 204);
+    border-color: rgb(214, 202, 180); 
+    color: #585854;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 4em 50%;
+  border-radius: 3px;
+  background-color: rgba(197, 154, 154, 0.5);
+
+}

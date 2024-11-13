@@ -1,0 +1,10 @@
+<div class="product">
+    <img src="{{this.src}}" alt="Teste">
+    <h4>{{this.name}}</h4>
+    <h3>R${{this.preco}}</h3>
+    {{#if this.frete_gratis}}
+        <h5>FRETE GRÁTIS</h5>
+    {{/if}}
+    <h6>Tamanhos: {{join this.tamanhos ", "}}</h6>
+    <a href="/roupas/{{this.id}}">COMPRAR!</a>
+</div>

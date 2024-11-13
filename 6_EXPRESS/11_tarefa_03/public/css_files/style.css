@@ -1,0 +1,192 @@
+@font-face {
+    font-family: "Cute Notes";
+    src: url("src/fonts/CuteNotes.ttf");   
+}
+@font-face {
+    font-family: "Sacramento";
+    src: url("src/fonts/Sacramento-Regular.ttf") format("opentype");
+}
+
+@keyframes pan {
+    0% {
+        background-position: 0% 0%;
+        background-image: radial-gradient(#9ef1e7, #95e1eb, #84d1ed), url("src/images/happy.svg");
+        
+    }
+    10% {
+        background-position: 10% 0%;
+        background-image: radial-gradient(#90dcd3, #81c5ce, #84d1ed), url("src/images/happy.svg");
+    }
+    15% {
+        background-position: 15% 0%;
+        background-image: radial-gradient(#7cbcb4, #81c5ce, #78bdd6), url("src/images/happy.svg");
+    }
+    25% {
+        background-position: 25% 0%;
+        background-image: radial-gradient(#7abbb3, #81c5ce, #6dadc4), url("src/images/happy.svg");
+        
+    }
+    30% {
+        background-position: 30% 0%;
+        background-image: radial-gradient(#6fa9a2, #6ea7af, #5990a4), url("src/images/happy.svg");
+    }
+    35%
+    {
+        background-position: 35% 0%;
+        background-image: radial-gradient(#699f98, #659aa1, #528496), url("src/images/happy.svg");
+    }
+    40%
+    {
+        background-position: 40% 0%;
+        background-image: radial-gradient(#62948d, #598a90, #497686), url("src/images/happy.svg");
+    }
+    50% {
+        background-position: 50% 0%;
+        background-image: radial-gradient(#699f98, #659aa1, #528496), url("src/images/happy.svg");
+    }
+    55%
+    {
+        background-position: 40% 0%;
+        background-image: radial-gradient(#699f98, #659aa1, #528496), url("src/images/happy.svg");
+    }
+    60%
+    {
+        background-position: 35% 0%;
+        background-image: radial-gradient(#6fa9a2, #6ea7af, #5990a4), url("src/images/happy.svg");
+    }
+    70%
+    {
+        background-position: 30% 0%;
+        background-image: radial-gradient(#7abbb3, #81c5ce, #6dadc4), url("src/images/happy.svg");
+    }
+    75%
+    {
+         
+        background-position: 25% 0%;
+        background-image: radial-gradient(#7cbcb4, #81c5ce, #78bdd6), url("src/images/happy.svg");
+        
+    }
+    80% {
+        background-position: 15% 0%;
+        background-image: radial-gradient(#90dcd3, #81c5ce, #84d1ed), url("src/images/happy.svg");
+    }
+
+    100% {
+        background-position: 0% 0%;
+        background-image: radial-gradient(#9ef1e7, #95e1eb, #84d1ed), url("src/images/happy.svg");
+    }
+}
+
+
+
+
+
+#bg_layer_1 {
+    /* Configurações do Background */
+    background-blend-mode: multiply;
+    background-size: 50%;
+    background-position: center center;
+    background-position-y: 0.5em;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+    display: block;
+    animation: pan 60s linear infinite;
+    z-index: 1;
+}
+
+#bg_layer_2 {
+    overflow: hidden;
+    z-index: 2;
+    display: block;
+    background-image: url("src/images/grama.svg");
+    background-size: 50%;
+    background-position: bottom;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin-top: 0em;
+}
+
+#bg_layer_3 {
+    overflow: hidden;
+    background-image: url("src/images/childhood.svg");
+    z-index: 3;
+    display: block;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+
+    
+}
+
+
+#content {
+    z-index: 4;
+    position: relative;
+    top: 2em;
+    text-align: center;
+    color: red;
+}
+
+.TittleText_config {
+    position: relative;
+    top: 1.5em;
+    padding: 0.5em;
+    margin-left: 500px;
+    margin-right: 500px;
+    text-align: center;
+    text-shadow: 1px 1px 2px black, 0 0 1em rgb(114, 196, 212);
+    display: block;
+    font-size: 230%;
+    font-family: "Cute Notes";
+    color: rgb(57, 66, 224);
+    background-color: rgb(255, 255, 0);
+    border-color: rgb(255, 0, 0) rgb(0, 255, 30) rgb(247, 0, 255) rgb(0, 253, 253);
+    box-shadow: 0 0 3em rgb(255, 255, 255);
+    border-width: 10px;
+    border-style: dotted;
+    outline-style: solid;
+    outline-color: blue;
+}
+
+.ProductsText_config {
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    top: 5em;
+    left: 0;
+    right: 0;
+}
+
+.icon {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: -3em; /* Ajuste conforme necessário */
+    left: 0.5em; /* Ajuste conforme necessário */
+    background-image: url("src/images/teddy_icon.png");
+    background-size: cover;
+    vertical-align: middle;
+}
+
+ul {
+    display: block;
+    list-style-type: none;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 40px;
+}
+  

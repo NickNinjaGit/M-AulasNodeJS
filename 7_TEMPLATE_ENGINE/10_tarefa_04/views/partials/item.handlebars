@@ -1,0 +1,22 @@
+{{#with roupa}}
+<div class="item">
+
+    <img class="src" src="{{src}}" alt="Teste">
+    <h4>{{name}}</h4>
+    <img class="rating_star">
+    <h5 class="rating">{{rating}}</h5>
+    <h4 class="description">{{description}}</h4>
+    <h3>R$ {{preco}}</h3>
+    {{#if frete_gratis}}
+        <h5 class="frete">FRETE GRÁTIS!</h5>
+        {{else}}
+            <form>
+                <label for="frete">Calcular Frete</label><br>
+                <input type="text" id="frete" name="frete" placeholder="Digite seu CEP">
+                <input type="submit" id="frete" name="frete" value="OK">
+            </form>
+    {{/if}}
+    <h6>Tamanhos: {{join tamanhos ", "}}</h6>
+    <a href="#">Adicionar ao carrinho</a>
+</div>
+{{/with}}

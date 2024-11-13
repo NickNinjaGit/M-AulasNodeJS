@@ -1,0 +1,11 @@
+<div id="book-page">
+    <a href="/books">Voltar</a>
+    <div class="container">
+        {{#with book}}
+        <h1>
+            {{title}}
+            <p>Este livro tem {{pageqty}} páginas.</p>
+        </h1>
+        {{/with}}
+    </div>
+</div>

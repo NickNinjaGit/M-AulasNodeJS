@@ -1,0 +1,362 @@
+@font-face {
+    font-family: "Magical_Childhood";
+    src: url("../src/fonts/Magical\ Childhood.otf");
+}
+
+@font-face {
+    font-family: "Sacramento";
+    src: url("../src/fonts/Sacramento-Regular.ttf") format("opentype");
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("../src/fonts/Poppins-Regular.ttf");
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    width: 100vw;
+    height: 100vh;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em;
+    background-color: rgb(246, 246, 69);
+    font-family: "Poppins";
+    font-weight: bold;
+    
+}
+
+#navbar ul {
+    display: flex;
+    justify-content: space-around;
+    gap: 2em;
+    margin-left: 25vh;
+    margin-top: 2em;
+    list-style: none;
+}
+
+#navbar li {
+    font-size: 110%;
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    color:rgb(23, 0, 154);
+}
+
+#navbar a:hover {
+    color: rgb(244, 78, 78);
+}
+
+#navbar #logo {
+    content: url("../src/images/teddy_icon.ico");
+    width: 50px;
+    margin-left: -20vh;
+    margin-top: -0.5em;
+}
+
+#navbar #login {
+    margin-left: 50vh;
+}
+
+.Catalogo {
+    display: flex;
+    justify-content: space-evenly; /* Altera para space-around para espaçamento igual */
+    align-items: center;
+    font-size: 150%;
+    font-family: "Poppins";
+    height: 70vh;
+    width: 100%; /* Garante largura total */
+    gap: 0px; /* Espaçamento entre os itens */
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: rgb(246, 246, 69);
+    border-radius: 5px;
+    padding: 1.5vh;
+    padding-bottom: 6vh;
+    margin: -5vh;
+    max-width: 200px;
+    height: 300px; /* Altura fixa para os contêineres */
+    outline: 2px solid rgb(223, 223, 223);
+}
+
+.product h3 { /*Preço*/
+    color: rgb(23, 0, 154);
+    font-size: 100%;
+    position: absolute;
+    top: 25vh;
+    
+}
+
+.product h4 { /*Nome do Produto*/
+    color: rgb(23, 0, 154);
+    font-size: 70%;
+    margin: 0;
+    position: absolute;
+    top: 23vh;
+    text-align: left;
+}
+
+.product h5 { /*Frete*/
+    color: rgb(23, 0, 154);
+    font-size: 60%;
+    position: absolute;
+    top: 28vh;
+}
+
+.product h6 /*Tamanhos*/
+{
+    color: rgb(23, 0, 154);
+    font-size: 50%;
+    position: absolute;
+    top: 30vh;
+}
+
+.product img {
+    background-repeat: no-repeat;
+    background-color: white;
+    border-radius: 5px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+} 
+
+.product a {
+    background-color: rgb(23, 0, 154);
+    color: white;
+    position: absolute;
+    text-decoration: none;
+    border-radius: 5px;
+    top: 35vh;
+    left: 5vh;
+    padding: 3px 5px;
+    
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: rgb(246, 246, 69);
+    border-radius: 5px;
+    padding: 5vh;
+    padding-right: 80vh;
+    margin: -5vh;
+    max-width: 200px;
+    height: 300px; /* Altura fixa para os contêineres */
+    outline: 2px solid rgb(223, 223, 223);
+}
+
+.item .src
+{
+    position: relative;
+    top: 0vh;
+    background-repeat: no-repeat;
+    background-color: white;
+    border-radius: 5px;
+    width: 200px;
+    height: 300px;
+    object-fit: contain;
+    outline: 2px solid rgb(223, 223, 223);
+}
+
+.item h4 /*Nome do produto*/
+{
+    color: black;
+    font-size: 110%;
+    margin: 0;
+    position: absolute;
+    top: 6vh;
+    left: 30vh;
+    text-align: left;
+}
+
+.item .description
+{
+    color: rgb(23, 0, 154);
+    font-size: 60%;
+    top: 15vh;
+    left: 30vh;
+    width: 45%;
+}
+
+.item .rating 
+{
+    position: absolute;
+    font-size: 110%;
+    top: 5.5vh;
+    left: 35vh;
+}
+
+.rating_star {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 9.5vh;
+    left: 30vh;
+    content: url("src/images/star_icon.png");
+    background-size: cover;
+    vertical-align: middle;
+    z-index: 10;
+}
+
+
+.item h3 /*preco*/
+{
+    position: absolute;
+    font-size: 180%;
+    top: 3vh;
+    left: 80vh;
+    text-align: center;
+    background-color: white;
+    border-radius: 5px;
+    outline: solid 5px rgba(255, 255, 255, 0.503);
+}
+
+
+.item .frete /*frete*/
+{
+    position: absolute;
+    top: 10vh;
+    font-size: 100%;
+    left: 80vh;
+    border-radius: 5px;
+}
+
+.item form
+{
+    position: absolute;
+    top: 15vh;
+    left: 80vh;
+    font-size: 60%;
+    border-radius: 5px;
+    width: 50%;
+}
+
+.item input
+{
+    padding: 3px 3px;
+}
+
+.item h6 /*tamanhos*/
+{
+    position: absolute;
+    font-size: 90%;
+    top: 28vh;
+    left: 30vh;
+}
+
+.item a {
+    background-color: rgb(23, 0, 154);
+    color: white;
+    position: absolute;
+    text-decoration: none;
+    border-radius: 5px;
+    top: 22vh;
+    left: 80vh;
+    font-size: 75%;
+    padding: 5px 5px;
+    
+}
+
+.item a:hover
+{
+    color: red
+}
+.TittleText_config {
+    position: relative;
+    top: 12vh;
+    padding: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 150%;
+    font-family: "Magical_Childhood";
+    color: rgb(255, 255, 255);
+    max-width: 90vw; /* Limita a largura máxima em telas menores */
+    word-wrap: break-word; /* Quebra palavras longas */
+}
+
+.bg_layer_1 {
+    background-blend-mode: multiply;
+    background-image: url("../src/images/happy.svg");
+    background-position: center center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    animation: pan 60s linear infinite;
+    z-index: -2;
+}
+
+@keyframes pan {
+    0% {
+        background-position: 0% 0%;
+        background-image: radial-gradient(#9ef1e7, #95e1eb, #84d1ed), url("../src/images/happy.svg");
+    }
+    10% {
+        background-position: 10% 0%;
+        background-image: radial-gradient(#90dcd3, #81c5ce, #84d1ed), url("../src/images/happy.svg");
+    }
+    15% {
+        background-position: 15% 0%;
+        background-image: radial-gradient(#7cbcb4, #81c5ce, #78bdd6), url("../src/images/happy.svg");
+    }
+    25% {
+        background-position: 25% 0%;
+        background-image: radial-gradient(#7abbb3, #81c5ce, #6dadc4), url("../src/images/happy.svg");
+    }
+    30% {
+        background-position: 30% 0%;
+        background-image: radial-gradient(#6fa9a2, #6ea7af, #5990a4), url("../src/images/happy.svg");
+    }
+    35% {
+        background-position: 35% 0%;
+        background-image: radial-gradient(#699f98, #659aa1, #528496), url("../src/images/happy.svg");
+    }
+    40% {
+        background-position: 40% 0%;
+        background-image: radial-gradient(#62948d, #598a90, #497686), url("../src/images/happy.svg");
+    }
+    50% {
+        background-position: 50% 0%;
+        background-image: radial-gradient(#699f98, #659aa1, #528496), url("../src/images/happy.svg");
+    }
+    55% {
+        background-position: 40% 0%;
+        background-image: radial-gradient(#699f98, #659aa1, #528496), url("../src/images/happy.svg");
+    }
+    60% {
+        background-position: 35% 0%;
+        background-image: radial-gradient(#6fa9a2, #6ea7af, #5990a4), url("../src/images/happy.svg");
+    }
+    70% {
+        background-position: 30% 0%;
+        background-image: radial-gradient(#7abbb3, #81c5ce, #6dadc4), url("../src/images/happy.svg");
+    }
+    75% {
+        background-position: 25% 0%;
+        background-image: radial-gradient(#7cbcb4, #81c5ce, #78bdd6), url("../src/images/happy.svg");
+    }
+    80% {
+        background-position: 15% 0%;
+        background-image: radial-gradient(#90dcd3, #81c5ce, #84d1ed), url("../src/images/happy.svg");
+    }
+    100% {
+        background-position: 0% 0%;
+        background-image: radial-gradient(#9ef1e7, #95e1eb, #84d1ed), url("../src/images/happy.svg");
+    }
+}

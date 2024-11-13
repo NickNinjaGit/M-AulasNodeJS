@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="icon" type="image/x-icon" href="/css/src/images/teddy_icon.ico">
+    </head>
+
+<nav>
+    <section>   
+    <div class="nav_config">
+    <a href="/"><p>Home</p></a>
+    <a href="/roupas"><p>Roupas</p></a>
+    <a href="#"><p>Brinquedos</p></a>
+    <a href="#"><p>Livros Infantis</p></a>
+    <a href="#"><p>Banho e Higiene</p></a>
+    <a href="#"><p>Saúde</p></a>
+    <a href="#"><p>Alimentação</p></a>
+     <div class="login">
+    {{#if this.auth}}
+    <a href="#">Faça seu Login</a>
+    {{else}}
+    <a href="#">Faça seu registro</a>
+    {{/if}}  
+    </div>
+    </div>
+    </section>
+    
+   
+</nav>
+
+<body>
+    <span class="logo"></span>
+    <div class="bg_layer_1"></div>
+    <div class="bg_layer_2"></div>
+    {{{body}}}
+</body>
+
+</html>
