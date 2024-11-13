@@ -6,6 +6,7 @@
 * {
   font-family: "Bebas Neue", sans-serif;
   font-weight: 100;
+  font-size: calc(1.1 + 0.5vw);
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -60,7 +61,6 @@ body {
   top: 0;
   z-index: 10;
 
-  background-color: rgb(247, 155, 170);
 }
 
 #navbar ul {
@@ -213,15 +213,15 @@ form input[type="submit"]:hover {
 
 .price {
     color: #0400ff;
-    margin-left: 0.9em;
-    font-size: 1.5em;
+    margin-left: 5%;
+    font-size: calc(1.1 + 0.5vw);
     background-color: var(--items-bg-color);
 }
 
 .timestamp {
     /* Estilo para a data */
     font-size: 0.9em;
-    margin-right: 1.2em;
+    margin-right: 5%;
     background-color: var(--items-bg-color);
 }
 .works a {
@@ -239,4 +239,17 @@ form input[type="submit"]:hover {
   color: white;
   border-radius: 20px;
   box-shadow: none;
+}
+
+.work-page {
+  margin-left: 40%;
+  
+}
+.work-page img {
+  max-width: 250px;
+  margin-bottom: 1em;
+}
+
+.work-page p {
+  margin-bottom: 1em;
 }
