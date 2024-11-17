@@ -1,0 +1,35 @@
+<h1>Cadastrar Serviço</h1>
+
+<form action="/works/create" method="POST">
+    <div class="form-control">
+        <!--Title-->
+        <label for="title">Título</label>
+        <input type="text" name="title" placeholder="Insira um título para o serviço..." required>  
+        <!--Description-->
+        <label for="description">Descrição</label>
+        <textarea name="description" id="description" placeholder="Descrição do Serviço..." required></textarea>
+        <!--Image-->
+        <label for="image">Imagem</label>
+        <input type="text" name="image" placeholder="Insira a url da imagem..." required>
+        <!--Price-->
+        <label for="price">Preço</label>
+        <input type="text" name="price" placeholder="Insira um preço..." required>
+        <!--Timestamp-->
+        <label for="timestamp">Prazo</label>
+        <input type="date" name="timestamp", required>
+
+        <input type="submit"></input>
+    </div>
+   
+   <script>
+    const priceInput = document.querySelector('input[name="price"]')
+
+    priceInput.addEventListener('input', (event) => {
+        // Remove tudo que não for número
+        let value = priceInput.value.replace(/[^0-9.,]/g, '');
+
+        // Formata o valor com "R$" no inicio
+        priceInput.value = value ? 'R$ ' + value : ''; 
+    })
+   </script>
+</form>
