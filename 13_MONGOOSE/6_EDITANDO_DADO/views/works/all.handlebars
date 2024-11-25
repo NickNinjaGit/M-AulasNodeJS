@@ -1,0 +1,17 @@
+<h1>
+    Serviços
+    <div class="works">
+        {{#each works}}
+            <div class="work">
+                <img src="{{this.image}}">
+                <h2>{{this.title}}</h2>
+                <div class="details">
+                    <span class="price">R${{this.price}}</span>
+                    <span class="timestamp">{{this.timestamp}}</span>
+                </div>
+                
+                <a href="/works/{{this._id}}">Ver Detalhes</a>
+            </div>
+        {{/each}}
+    </div>
+</h1>

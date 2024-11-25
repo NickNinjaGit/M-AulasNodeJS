@@ -1,0 +1,10 @@
+<div class="work-page">
+    <a href="/">Voltar</a>
+    <h1>{{work.name}}</h1>
+    <p>{{work.description}}</p>
+    <img src="{{work.image}}" alt="{{work.name}}">
+    <p>R${{work.price}}</p>
+    <p>{{work.timestamp}}</p>
+    <a href="/works/edit/{{work._id}}">Editar Serviço</a>
+    <form action="/works/remove/{{work._id}}" method="POST"><input type="submit" value="Excluir Serviço"></form>
+</div>
